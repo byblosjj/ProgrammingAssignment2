@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Creating special matrix and fuction to cached solve
+## If matrix was solved we get cached value. Otherwise solve matrix.
 
-## Write a short comment describing this function
+
+## Creating special matrix with get/set functions 
+## and get/set solved (iversed) matrix value fuctions.
+## It is a list in fact.
+## Assumption: matrix is reversible
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -19,6 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+## compute cacheSolve - check if the matrix was solved and get value or compute it
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
